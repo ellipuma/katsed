@@ -51,7 +51,7 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<? if ($auth->logged_in): ?>
-					<li><a href="#">Minu andmed</a></li>
+					<li><a href="<?=BASE_URL?>account">Minu andmed</a></li>
 					<li><a href="#">Logi välja</a></li>
 				<?else:?>
 					<li><a href="<?=BASE_URL?>register">Registreeri</a></li>

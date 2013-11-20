@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2013 at 03:02 PM
+-- Generation Time: Nov 20, 2013 at 10:34 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -28,6 +28,23 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(255) NOT NULL,
   `email` varchar(100) NOT NULL,
   `deleted` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `eesnimi` varchar(50) DEFAULT NULL,
+  `perenimi` varchar(50) DEFAULT NULL,
+  `telefon` int(7) DEFAULT NULL,
+  `akeel` varchar(15) DEFAULT NULL,
+  `bkeel` varchar(15) DEFAULT NULL,
+  `hinne_akeel1` int(1) DEFAULT NULL,
+  `hinne_akeel2` int(1) DEFAULT NULL,
+  `hinne_akeel3` int(1) DEFAULT NULL,
+  `hinne_bkeel1` int(1) DEFAULT NULL,
+  `hinne_bkeel2` int(1) DEFAULT NULL,
+  `hinne_bkeel3` int(1) DEFAULT NULL,
+  `hinne_mat1` int(1) DEFAULT NULL,
+  `hinne_mat2` int(1) DEFAULT NULL,
+  `hinne_mat3` int(1) DEFAULT NULL,
+  `hinne_eesti1` int(1) DEFAULT NULL,
+  `hinne_eesti2` int(1) DEFAULT NULL,
+  `hinne_eesti3` int(1) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
@@ -35,6 +52,6 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `password`, `email`, `deleted`) VALUES
-(1, 'demo', 'demo', '', 0);
+INSERT INTO `user` (`user_id`, `username`, `password`, `email`, `deleted`, `eesnimi`, `perenimi`, `telefon`, `akeel`, `bkeel`, `hinne_akeel1`, `hinne_akeel2`, `hinne_akeel3`, `hinne_bkeel1`, `hinne_bkeel2`, `hinne_bkeel3`, `hinne_mat1`, `hinne_mat2`, `hinne_mat3`, `hinne_eesti1`, `hinne_eesti2`, `hinne_eesti3`) VALUES
+(1, 'demo', 'demo', '', 0, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0);
 SET FOREIGN_KEY_CHECKS=1;
