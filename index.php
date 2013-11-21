@@ -2,7 +2,7 @@
 
 // Project constants
 define('PROJECT_NAME', 'katsed');
-define('DEFAULT_CONTROLLER', 'welcome');
+define('DEFAULT_CONTROLLER', 'katsed');
 define('DEBUG', false);
 
 // Load app
